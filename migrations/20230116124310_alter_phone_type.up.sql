@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- alter phone field column type to accomodate for soft deletion 
 
 do $$

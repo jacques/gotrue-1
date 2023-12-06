@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- backfill the auth.identities column by adding an email identity 
 -- for all auth.users with an email and password 
 

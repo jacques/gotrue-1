@@ -64,6 +64,7 @@ func migrate(cmd *cobra.Command, args []string) {
 	deets.Options = map[string]string{
 		"migration_table_name": "schema_migrations",
 		"Namespace":            globalConfig.DB.Namespace,
+		"Prefix":               globalConfig.DB.MigrationPrefix,
 	}
 
 	db, err := pop.NewConnection(deets)

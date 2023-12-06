@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- adds email_change_confirmed
 
 ALTER TABLE {{ index .Options "Namespace" }}.users

@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- adds banned_until column
 
 ALTER TABLE {{ index .Options "Namespace" }}.users

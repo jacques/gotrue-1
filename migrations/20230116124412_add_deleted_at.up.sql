@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- adds deleted_at column to auth.users 
 
 alter table {{ index .Options "Namespace" }}.users 

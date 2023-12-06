@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- update auth functions
 
 create or replace function {{ index .Options "Namespace" }}.uid() 

@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- adds confirmed at
 
 ALTER TABLE {{ index .Options "Namespace" }}.users

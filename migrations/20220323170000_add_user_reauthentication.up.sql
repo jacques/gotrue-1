@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- adds reauthentication_token and reauthentication_sent_at 
 
 ALTER TABLE {{ index .Options "Namespace" }}.users

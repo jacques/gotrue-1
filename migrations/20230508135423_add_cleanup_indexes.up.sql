@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- Indexes used for cleaning up old or stale objects.
 
 create index if not exists

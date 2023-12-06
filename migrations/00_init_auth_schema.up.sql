@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- auth.users definition
 
 CREATE TABLE IF NOT EXISTS {{ index .Options "Namespace" }}.users (

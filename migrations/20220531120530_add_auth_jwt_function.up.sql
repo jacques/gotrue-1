@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- add auth.jwt function
 
 comment on function {{ index .Options "Namespace" }}.uid() is 'Deprecated. Use auth.jwt() -> ''sub'' instead.';

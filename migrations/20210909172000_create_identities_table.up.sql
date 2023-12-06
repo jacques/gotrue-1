@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- adds identities table 
 
 CREATE TABLE IF NOT EXISTS {{ index .Options "Namespace" }}.identities (

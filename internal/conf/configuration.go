@@ -59,9 +59,10 @@ type EmailProviderConfiguration struct {
 
 // DBConfiguration holds all the database related configuration.
 type DBConfiguration struct {
-	Driver    string `json:"driver" required:"true"`
-	URL       string `json:"url" envconfig:"DATABASE_URL" required:"true"`
-	Namespace string `json:"namespace" envconfig:"DB_NAMESPACE" default:"auth"`
+	Driver          string `json:"driver" required:"true"`
+	URL             string `json:"url" envconfig:"DATABASE_URL" required:"true"`
+	Namespace       string `json:"namespace" envconfig:"DB_NAMESPACE" default:"auth"`
+	MigrationPrefix string `json:"migration_prefix" envconfig:"DB_MIGRATION_PREFIX" default:"--auth-migration"`
 	// MaxPoolSize defaults to 0 (unlimited).
 	MaxPoolSize       int           `json:"max_pool_size" split_words:"true"`
 	MaxIdlePoolSize   int           `json:"max_idle_pool_size" split_words:"true"`

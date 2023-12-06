@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- previous backfill migration left last_sign_in_at to be null, which broke some projects
 
 update {{ index .Options "Namespace" }}.identities

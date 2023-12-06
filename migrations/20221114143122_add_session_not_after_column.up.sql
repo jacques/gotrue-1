@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 alter table only {{ index .Options "Namespace" }}.sessions
   add column if not exists not_after timestamptz;
 

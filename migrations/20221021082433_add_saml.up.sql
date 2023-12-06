@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- Multi-instance mode (see auth.instances) table intentionally not supported and ignored.
 
 create table if not exists {{ index .Options "Namespace" }}.sso_providers (

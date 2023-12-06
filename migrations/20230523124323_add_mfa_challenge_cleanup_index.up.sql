@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- Index used to clean up mfa challenges
 
 create index if not exists

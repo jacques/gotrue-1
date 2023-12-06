@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- Add session_id column to refresh_tokens table
 create table if not exists {{ index .Options "Namespace" }}.sessions (
     id uuid not null,

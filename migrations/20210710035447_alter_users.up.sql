@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- alter user schema
 
 ALTER TABLE {{ index .Options "Namespace" }}.users 

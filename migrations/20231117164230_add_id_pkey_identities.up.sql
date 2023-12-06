@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 do $$
 begin
     if not exists(select * 

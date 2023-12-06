@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- backfills the missing email identity for invited users
 
 insert into {{ index .Options "Namespace" }}.identities (id, user_id, identity_data, provider, last_sign_in_at, created_at, updated_at)

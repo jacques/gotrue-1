@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- add partial unique indices to confirmation_token, recovery_token, email_change_token_current, email_change_token_new, phone_change_token, reauthentication_token
 -- ignores partial unique index creation on fields which contain empty strings, whitespaces or purely numeric otps
 

@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 alter table {{ index .Options "Namespace" }}.mfa_amr_claims
   add column if not exists id uuid not null;
 

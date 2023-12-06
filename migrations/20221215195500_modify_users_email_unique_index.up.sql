@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- this change is relatively temporary
 -- it is meant to keep database consistency guarantees until there is proper
 -- introduction of account linking / merging / delinking APIs, at which point

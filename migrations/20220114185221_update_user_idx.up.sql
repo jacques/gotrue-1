@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- updates users_instance_id_email_idx definition
 
 DROP INDEX IF EXISTS users_instance_id_email_idx;

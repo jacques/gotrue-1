@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 update
   {{ index .Options "Namespace" }}.identities as identities
 set

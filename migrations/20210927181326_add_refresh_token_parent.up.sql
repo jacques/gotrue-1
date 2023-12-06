@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- adds parent column
 
 ALTER TABLE {{ index .Options "Namespace" }}.refresh_tokens

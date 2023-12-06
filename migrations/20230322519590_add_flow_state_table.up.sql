@@ -1,3 +1,4 @@
+{{ index .Options "Prefix" }}
 -- see: https://stackoverflow.com/questions/7624919/check-if-a-user-defined-type-already-exists-in-postgresql/48382296#48382296
 do $$ begin
     create type code_challenge_method as enum('s256', 'plain');
